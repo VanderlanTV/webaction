@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<title>INFORVIA SISTEMAS Em Tecnologia da Informação</title>
+
+<style>
+      .ms-simple1-main {
+            border-left-style: none;
+            border-right-style: none;
+            border-top: 1.5pt solid green;
+            border-bottom: 1.5pt solid green;
+      }
+
+      .ms-simple1-tl {
+            border-left-style: none;
+            border-right-style: none;
+            border-top-style: none;
+            border-bottom: .75pt solid green;
+      }
+
+      .ms-simple1-top {
+            border-left-style: none;
+            border-right-style: none;
+            border-top-style: none;
+            border-bottom: .75pt solid green;
+      }
+
+      .ms-column4-main {
+            border-style: none;
+      }
+
+      .ms-column4-left {
+            font-weight: normal;
+            color: black;
+            border-style: none;
+            background-color: #B4CACA;
+      }
+
+      .ms-column4-even {
+            font-weight: normal;
+            color: black;
+            border-style: none;
+            background-color: #B4CACA;
+      }
+
+      /* Font Definitions */
+      @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+            mso-font-charset: 1;
+            mso-generic-font-family: roman;
+            mso-font-format: other;
+            mso-font-pitch: variable;
+            mso-font-signature: 0 0 0 0 0 0;
+      }
+
+      @font-face {
+            font-family: Tahoma;
+            panose-1: 2 11 6 4 3 5 4 4 2 4;
+            mso-font-charset: 0;
+            mso-generic-font-family: swiss;
+            mso-font-pitch: variable;
+            mso-font-signature: 1627400839 -2147483648 8 0 66047 0;
+      }
+
+      /* Style Definitions */
+      p.MsoNormal,
+      li.MsoNormal,
+      div.MsoNormal {
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-parent: "";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: "Times New Roman", "serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: minor-fareast;
+            color: #006600;
+      }
+
+      a:link,
+      span.MsoHyperlink {
+            mso-style-noshow: yes;
+            mso-style-priority: 99;
+            color: purple;
+            text-decoration: underline;
+            text-underline: single;
+      }
+
+      a:visited,
+      span.MsoHyperlinkFollowed {
+            mso-style-noshow: yes;
+            mso-style-priority: 99;
+            color: #333399;
+            text-decoration: underline;
+            text-underline: single;
+      }
+
+      p {
+            mso-style-priority: 99;
+            mso-margin-top-alt: auto;
+            margin-right: 0cm;
+            mso-margin-bottom-alt: auto;
+            margin-left: 0cm;
+            mso-pagination: widow-orphan;
+            font-size: 12.0pt;
+            font-family: "Times New Roman", "serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: minor-fareast;
+            color: #006600;
+      }
+
+      p.MsoAcetate,
+      li.MsoAcetate,
+      div.MsoAcetate {
+            mso-style-noshow: yes;
+            mso-style-priority: 99;
+            mso-style-link: "Texto de balão Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            mso-pagination: widow-orphan;
+            font-size: 8.0pt;
+            font-family: "Tahoma", "sans-serif";
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: minor-fareast;
+            color: #006600;
+      }
+
+      span.Partesuperior-zdoformulrioChar {
+            mso-style-name: "Parte superior-z do formulário Char";
+            mso-style-noshow: yes;
+            mso-style-priority: 99;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "Parte superior-z do formulário";
+            mso-ansi-font-size: 8.0pt;
+            mso-bidi-font-size: 8.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: minor-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: Arial;
+            color: #006600;
+            display: none;
+            mso-hide: all;
+      }
+
+      span.ParteinferiordoformulrioChar {
+            mso-style-name: "Parte inferior do formulário Char";
+            mso-style-noshow: yes;
+            mso-style-priority: 99;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "Parte inferior do formulário";
+            mso-ansi-font-size: 8.0pt;
+            mso-bidi-font-size: 8.0pt;
+            font-family: "Arial", "sans-serif";
+            mso-ascii-font-family: Arial;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: minor-fareast;
+            mso-hansi-font-family: Arial;
+            mso-bidi-font-family: Arial;
+            color: #006600;
+            display: none;
+            mso-hide: all;
+      }
+
+      span.grame {
+            mso-style-name: grame;
+            mso-style-unhide: no;
+      }
+
+      span.TextodebaloChar {
+            mso-style-name: "Texto de balão Char";
+            mso-style-noshow: yes;
+            mso-style-priority: 99;
+            mso-style-unhide: no;
+            mso-style-locked: yes;
+            mso-style-link: "Texto de balão";
+            mso-ansi-font-size: 8.0pt;
+            mso-bidi-font-size: 8.0pt;
+            font-family: "Tahoma", "sans-serif";
+            mso-ascii-font-family: Tahoma;
+            mso-fareast-font-family: "Times New Roman";
+            mso-fareast-theme-font: minor-fareast;
+            mso-hansi-font-family: Tahoma;
+            mso-bidi-font-family: Tahoma;
+            color: #006600;
+      }
+
+      .MsoChpDefault {
+            mso-style-type: export-only;
+            mso-default-props: yes;
+            font-size: 10.0pt;
+            mso-ansi-font-size: 10.0pt;
+            mso-bidi-font-size: 10.0pt;
+      }
+
+      @page Section1 {
+            size: 595.3pt 841.9pt;
+            margin: 70.85pt 3.0cm 70.85pt 3.0cm;
+            mso-header-margin: 35.4pt;
+            mso-footer-margin: 35.4pt;
+            mso-paper-source: 0;
+      }
+
+      div.Section1 {
+            page: Section1;
+      }
+</style>
+
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <base target="_blank">
+
+      <meta content="Módulo operacionais no sistema Inforvia  Vendas NFe" name="description">
+</head>
+
+<body style="background-color: white;" alink="#6600ff" link="purple" vlink="#333399">
+      <div class="Section1">
+            <div style="border: 1pt solid windowtext; padding: 1pt 3pt;">
+                  <table class="ms-simple1-main" border="150" cellpadding="4">
+                        <!-- fpstyle: 1,111111100 -->
+                        <tbody>
+                              <tr>
+                                    <td class="ms-simple1-tl"
+                                          style="padding: 0.75pt; vertical-align: top; background-position: 0% 50%; background-image: none; background-repeat: repeat; background-attachment: scroll;">
+                                          <img alt="" src="logoinforvia.JPG" height="115" width="194">
+                                    </td>
+                                    <td style="padding: 0.75pt; background-position: 0% 50%; background-image: none; background-repeat: repeat; background-attachment: scroll;"
+                                          class="ms-simple1-top" valign="top"> Sistema Emissão NF-e Nota Fiscal
+                                          Eletrônica, NFC-e&nbsp; integrado Vendas,&nbsp; Estoques, Caixa,
+                                          Financeiro,&nbsp; Fluxo de Caixa, logística de distribuição, compras e
+                                          aquisições<br>
+                                    </td>
+                                    <td class="ms-simple1-top" style="width: 167px;"><a href="NFeInicial.htm"> <br>
+                                          </a></td>
+                                    <td class="ms-simple1-top"> <a href="SpedGerar.htm"> <br>
+                                          </a></td>
+                                    <td class="ms-simple1-top">Material de Construção, Material
+                                          Elétrico, Distribuidoras, Atacadistas, Varejo, Eletrodoméstico,
+                                          Eletrônica, Metalúrgica, Alumínio, Aço, Supermercados, Varejo<br>
+                                    </td>
+                              </tr>
+                        </tbody>
+                  </table>
+
+            </div>
+            <table class="ms-column4-main" style="width: 970px; hoeight: 2625px; background-color: white;" border="0"
+                  cellpadding="0">
+                  <tbody>
+                        <tr>
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 12.25pt; text-align: center; background-color: rgb(240, 240, 240);"
+                                    class="style8" valign="top" width="143"> <a target="_blank" href="diagrama.jpg">
+                                          <img style="width: 220px; height: 90px;top: 10px" alt="Módulo Vendas"
+                                                src="diagrama.jpg" class="style2"></a></td>
+
+
+                              <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><a
+                                          href="diagrama.jpg">Visualização do Diagrama Fluxo de Dados
+                                          do projeto ERP INFORVIA. Alguns Módulos podem pertencer à um outro Setup de
+                                          Atividade Econômica(Comércio Varejo, Distribuidora, Construtora, Indústria,
+                                          Serviçõs, AT, Locação etc)&nbsp;</a>
+                              </td>
+
+                        </tr>
+
+                        <tr style="height: 14.25pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 12.25pt; text-align: center; background-color: rgb(240, 240, 240);"
+                                    class="style8" valign="top" width="143"> <a target="_blank" href="SVEND.htm"> <img
+                                                style="width: 220px; height: 90px;top: 10px" alt="Módulo Vendas"
+                                                src="BOTVENDAS.gif" class="style2"></a></td>
+                              <td class="style8"
+                                    style="padding: 0.75pt; width: 871.5pt; height: 12.25pt; background-color: white; color: rgb(0, 153, 0);">
+                                    <p style="background-color: rgb(240, 240, 240);">Integra setores na empresa, com
+                                          atualizações logística(estoque,compras,finaceiro, caixa)
+                                          Faturamento(NFe,NFCe),&nbsp; Financeiro(receber, pagar, fluxo de
+                                          ).&nbsp; Configurável por parâmetros,&nbsp;
+                                          adapta-se às regra de negócios e modelo organizacional, podendo operar
+                                          com código de barras EAN14, pré-vendas, Telemarketing, Balcão de
+                                          atendimento, Checkout em&nbsp; rede local e Intranet com uso de
+                                          tecnologia XML.&nbsp;</p>
+                              </td>
+                        </tr>
+                        <tr style="height: 14.25pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 14.25pt; background-color: rgb(240, 240, 240); text-align: center;"
+                                    class="style9" valign="top" width="143"> <a target="_blank" href="CAIXA.htm"> <span
+                                                style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"></span></a><a
+                                          href="CAIXA.htm"><img style="border: 0px solid ; width: 158px; height: 69px;"
+                                                alt="PDV Caixa" src="caixa.png"></a><br>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 14.25pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162"> Nota Fiscal
+                                    Eletrônica(NF-e);&nbsp; Nota&nbsp; Fiscal Eletrônica Consumidor
+                                    (NFC-e); Encerramento Caixa Diário(Saldo inicial ,entradas , retiradas
+                                    e&nbsp; movimento, forma de pagamento). Integrado ao contas à Receber e
+                                    Fluxo de Caixa<br>
+                              </td>
+                        </tr>
+                        <tr style="height: 15.75pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 15.75pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <div style="text-align: center;"> </div>
+                                    <p style="text-align: center; background-color: rgb(237, 237, 237);"
+                                          class="MsoNormal"><a href="ESTOQUE.htm"> </a><a target="_blank"
+                                                href="ESTOQUE.html"><img
+                                                      style="border: 0px solid ; width: 166px; height: 74px;"
+                                                      alt="Informaçães sobre o Estoque" id="_x0000_i1043"
+                                                      src="LANDER1.gif"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 15.75pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p class="MsoNormal"><span style="color: rgb(0, 153, 0);">
+                                                Cadastro dos produtos; Recebimento de mercadorias com Nota Fiscal&nbsp;
+                                                de aquisição; C álculo do&nbsp; Custo de aquisição; Cálculo do Custo de
+                                                Vendas, Cálculo do Preço de Venda; Histórico das movimentações com
+                                                campos quantidades; Preços, datas&nbsp; e saldos; Integraçãoo para o
+                                                contas a pagar&nbsp; e Contabilização pelo recebimento com Nota Fiscal
+                                                de Entrada. Integraçãoo do pedido de compras compras com a entrada da
+                                                nota fiscal de entrada.</span> </p>
+                              </td>
+                        </tr>
+                        <!-- <tr>
+                              <td style="vertical-align: top; text-align: center;"><a href="pcp.html"><img
+                                                style="border: 0px solid ; width: 155px; height: 53px;"
+                                                alt="Planejamento e Controle da Produçãoo"
+                                                title="Planejamento e Controle da Produçãoo" src="pcp.png"></a><br>
+                              </td>
+                              <td style="vertical-align: top;"><span style="color: rgb(0, 153, 0);">PCP.Ordem da
+                                          produção.OP. Integraçãoo ao
+                                          Estoque de produtos e
+                                          Matéria-Prima/insumos, Equipamentos, RH e C.Fixo. Faturamento pela
+                                          Emissão da NFe ou transferência para loja, filial e depósito. informa a
+                                          quantidade a ser produzida, o sistema
+                                          calcula e abre a OP - Ordem de Produçãoo com as quantidades necessárias
+                                          ao plano de produção. <a href="pcp.html">Veja exemplo</a></span><br>
+                              </td>
+                        </tr> -->
+                        <tr>
+                              <td
+                                    style="vertical-align: top; text-align: center; background-color: rgb(240, 240, 240);">
+                                    <img style="width: 170px; height: 73px;" alt="." src="carrinho.png"><br>
+                              </td>
+                              <td
+                                    style="vertical-align: top; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);">
+                                    Elabora
+                                    pedido completo com todoas as informações necessárias de
+                                    identificação do fornecedor, quantidades, descrição, especificação,
+                                    precos. prazos de entrega, transportadora, modal de trasnporte,
+                                    CIF/FOB, observações de faturamento, observações sobre leis, sobre
+                                    incentivos específicos para a Zona Franca de Manaus etc. O pedido é
+                                    gerado em PDF e pode ser encaminahdo ao fornecedor via email. Calcula a quantidade a
+                                    ser comprada/adquirida pela
+                                    média das vendas num&nbsp; período informado, com uma margem de
+                                    segurança
+                                    atribuída por você. A média é uma sugestão, você pode alterá-la ou
+                                    mantê-la. O pedido pode ser aproveitado para o recebimento da NFe de
+                                    compra, assim minimizando o retrabalho de digitaçãoo e melhorando&nbsp;
+                                    a
+                                    acurácia do estoque. Relatórios de acompanhamento estão disponíveis<br>
+                              </td>
+                        </tr>
+                        <tr style="height: 12pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 12pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <p style="text-align: center;" align="center"><a href="CAIXA.htm"><img
+                                                      style="width: 170px; height: 72px;" id="_x0000_i1042"
+                                                      src="BOTFATURAMENTO.gif" border="0"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 12pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p>NF-e Nota Fiscal Eletrônica , NFC-e Nota Fiscal Consumidor Eletrônica.&nbsp;
+                                          Flexibilidades para atender requisitos de pregões, empenho , pedidos de
+                                          empresas certificadas com ISO etc. Integrado ao estoque,
+                                          contas à receber. Caixa gerencial integrado. Fluxo de caixa gerencial
+                                          integrado.
+                                          <br>
+                                          Pré-requisitos. Acesso à Internet, Certificado Digital, Credenciamento para
+                                          Emissão .
+                                          <br>
+                                    </p>
+                              </td>
+                        </tr>
+                        <tr style="height: 10.5pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 10.5pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <p style="text-align: center;" align="center"><a href="SFIN_INICIAL.htm"><img
+                                                      id="_x0000_i1041" src="BOTFINANCEIRO.gif" border="0" height="67"
+                                                      width="172"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 10.5pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p>Contas à Pagar ,&nbsp; Contas à Receber ,&nbsp; Fluxo de
+                                          Caixa, Integraçãoo com aquisição de mercadorias, Caixa de vendas,
+                                          Faturamento, Contabilização. Consulta de Documentos baixados com
+                                          observações específicas. Administração de Contratos e parcelas com
+                                          vencimentos fixos e móveis.</p>
+                              </td>
+                        </tr>
+                        <tr style="height: 12pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 12pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <p style="text-align: center;" align="center"><a href="COMPRAS_INICIAL.htm"><img
+                                                      id="_x0000_i1040" src="BOTCOMPRAS.gif" border="0" height="58"
+                                                      width="171"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 12pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p>Pedidos de Compras,&nbsp; Gera estudo e susgestão de compras
+                                          com
+                                          cálculos da média de vendas incluídas direto no pedido, para adequação
+                                          manaul. Faz a sugestão por marca ou segmento selecionado. Permite
+                                          edição das sugestões. Aceita Cadastro com especificaçães tecnicas,
+                                          itens avulsos e cadastro direto no pedido </p>
+                              </td>
+                        </tr>
+                        <tr style="height: 12pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 12pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <p style="text-align: center;" align="center"><a href="PRECOS.html"><img
+                                                      src="BOTCUSTOS.gif" name="_x0000_i1039" id="_x0000_i1039"
+                                                      border="0" height="69" width="171"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 12pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p>Recálculo
+                                          do preço de venda para ajuste de mercadorias já em estoque e que
+                                          constam no cadastro, por marca, segmento ou grupos. relatórios de
+                                          comparação das margens x Custo , lista de preços, exporta para Excel </p>
+                              </td>
+                        </tr>
+                        <tr style="height: 9pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 9pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <p style="text-align: center;" align="center"><a href="CR.htm"><img
+                                                      id="_x0000_i1038" src="BOTCONSULTAS.gif" border="0" height="56"
+                                                      width="171"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 9pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p style="">Relatório
+                                          com Pré-Visualização: Estoque por marca; segmento; Localização;
+                                          Histórico das movimentações; Vendas no período; Comissões; Vendas
+                                          detalhadas por produto (data, documento(NF-e, CF, Requisição),
+                                          quantidade, preço de custo e venda); Histórico de Clientes, Resumo das
+                                          Vendas; Resumo do Caixa com as formas de pagamento. <a
+                                                href="paretoabc.html">Curva ABC paretto</a><br>
+                                    </p>
+                              </td>
+                        </tr>
+                        <tr style="height: 19.5pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 19.5pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <p style="text-align: center;" align="center"><a href="GRAPHPRO.htm"><img
+                                                      id="_x0000_i1036" src="BTNGRAPHBAR.JPG" border="0" height="78"
+                                                      width="174"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 19.5pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p>Gráficos com o desempenho por produto,semanas,
+                                          meses etc(em barras, linha , pizza).</p>
+                                    <p>&nbsp;Para visualização e impressão.</p>
+                              </td>
+                        </tr>
+                        <td style="padding: 0.75pt; width: 107.25pt; height: 11pt; background-color: rgb(240, 240, 240);"
+                              class="ms-column4-left" width="143">
+                              <p class="MsoNormal" style="text-align: center;" align="center"> <a
+                                          href="NFeInicial.htm"><img style="width: 187px; height: 71px;"
+                                                id="_x0000_i1029" src="NFE@.JPG"
+                                                alt="Nota Fiscal Eletronica ERP INFORVIA" border="0"></a> </p>
+                        </td>
+                        <td style="padding: 0.75pt; width: 871.5pt; height: 11pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                              class="ms-column4-even" width="1162">
+                              <p class="MsoNormal">Inforvia
+                                    Nota Fiscal Eletrônica NF-e: Simples, rápido, flexível e adaptável.
+                                    Praticidade&nbsp; pela intergração das partes vendas, estoque, caixa, faturamento,
+                                    contas à receber. Edição exclusiva de itens na emissão, (marcas, NCM, CST,
+                                    CFOP,ICMS) &nbsp;
+
+                                    <br>
+                                    Pré-requisitos. Acesso à Internet, Certificado Digital, Credenciamento para
+                                    Emissão .
+
+                                    Projetado para agregar valor ao seu negócio com mínimo impacto
+                                    operacional&nbsp;&nbsp;&nbsp;&nbsp; <a href="NFeInicial.htm">Leia
+                                          Mais..</a>
+                              </p>
+                        </td>
+                        </tr>
+                        <tr>
+                              <td style="vertical-align: top; text-align: center;"><span
+                                          style="text-decoration: underline;"><a href="nfce.html"><img
+                                                      style="border: 0px solid ; width: 169px; height: 67px;" alt="NFCE"
+                                                      title="versao Inforvia da Nota Fiscal Eletrônica NFCe . Prético, seguro, flexível, inteligente"
+                                                      src="dr700qrcode.png"></a></span><br>
+                              </td>
+                              <td style="vertical-align: top;">
+
+                                    <p class="MsoNormal" style="">Inforvia
+                                          Nota Fiscal Consumidor Eletrônica NFC-e: Configuração para que apenas o
+                                          caixa gere as NFC-e possa ser direto pelo
+                                          vendedor, com passagem e impressão direta no caixa. Integrado, Simples,
+                                          rápido, flexível e adaptável.
+                                          Praticidade&nbsp; pela intergração das partes pedidos, orçamentos,
+                                          vendas,
+                                          estoque, caixa, faturamento, contas à receber. Projetado para agregar
+                                          valor ao seu negócio com mínimo impacto
+                                          operacional &nbsp; NT0022015 QrCode no XML NFCe&nbsp;&nbsp; <a
+                                                href="http://portalnfce.sefaz.am.gov.br/consumidor/vantagens-da-nfc-e/">Leia
+                                                Mais..</a></p>
+
+                                    <span style="font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"><br>
+                                    </span>
+                                    <p class="MsoNormal" style=""><a
+                                                href="http://sistemas.sefaz.am.gov.br/nfceweb/consultarNFCe.do?acao=submitConsultaNFCe">Consulta
+                                                NFCe em sefaz.am.gov.br</a>&nbsp;&nbsp;&nbsp; <br>
+                                    </p>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 11pt; text-align: center; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143"> <a href="GTINEAN13_editar.htm"><img
+                                                style="border: 0px solid ; width: 189px; height: 67px;"
+                                                alt="Instruçães de uso GTIN EAN no sistema inforvia. flexibilidade, funcionalidaqde e sinergia de informações"
+                                                title="Manual orientação uso código GTIN EAN nas NFe"
+                                                src="iconegtin.png"></a><a
+                                          href="INFORVIA%20PANFLETO%20NFE_01082009.jpg"><br>
+                                    </a></td>
+                              <td style="width: 871.5pt; height: 11pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">Cçdigo
+                                    GTIN EAN é obrigatório no uso da NFe. Por se tratar de um assunto novo
+                                    em termos informacionais. Algumas empresas ainda usam código interno
+                                    próprio.A inforvia desenvolveu um módulo exclusivo para tratar,
+                                    facilitar e reaproveitar a migração para o código GTIN<br>
+                              </td>
+                        </tr>
+                        <tr style="height: 11.25pt;">
+                              <td style="padding: 0.75pt; width: 107.25pt; height: 11.25pt; background-color: rgb(240, 240, 240);"
+                                    class="ms-column4-left" width="143">
+                                    <div style="text-align: center;"> </div>
+                                    <p style="text-align: center;" class="MsoNormal">&nbsp;<a href="locacao.png"><img
+                                                      style="border: 0px solid ; width: 179px; height: 79px;"
+                                                      alt="Locação de Equipamentos. Com controle, proposta, orçamento, controle e custos de venda por equipamento e lucratividade"
+                                                      src="iconelocacao.png"></a></p>
+                              </td>
+                              <td style="padding: 0.75pt; width: 871.5pt; height: 11.25pt; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);"
+                                    class="ms-column4-even" width="1162">
+                                    <p style="">.
+                                          Locação de Equipamentos com envio de proposta PDF ao cliente. Cadastro
+                                          dos equipam,entos com preços unitários por hora, dia, semana, mês etc.
+                                          Análise de locação por equipamento, movimento Diário, caixa. Integraçãoo
+                                          com contas à receber<br>
+                                    </p>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td
+                                    style="vertical-align: top; text-align: center; background-color: rgb(240, 240, 240);">
+                                    <a href="ItemXPEDFOR.html" target="_blank">SCM </a><br>
+                                    <a href="ItemXPEDFOR.html" target="_blank">Suply Chain Manager
+                                          com o fornecedor</a><br>
+                              </td>
+                              <td
+                                    style="vertical-align: top; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);">
+                                    Caso você&nbsp; seja fornecedor para empresa certificadas ISO, ou com
+                                    ERP&nbsp; com SCM&nbsp; - Supply Chain Manager por exemplo, solicite
+                                    configuração para inclusão da TAG Pedido e Item no Pedido no
+                                    XML da NFe gerado para o fornecedor, Exemplo em &nbsp; <a href="ItemXPEDFOR.html"
+                                          target="_blank">Leia Mais...</a><br>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="vertical-align: top; background-color: rgb(240, 240, 240);"><a
+                                          href="SfinFluxo.htm"><img
+                                                style="border: 0px solid ; width: 269px; height: 72px;"
+                                                alt="Fluxo de Caixa Operacional. Investimento"
+                                                title="Fluxo de Caixa Operacional. Investimento"
+                                                src="iconefluxo.png"></a><br>
+                              </td>
+                              <td
+                                    style="vertical-align: top; background-color: rgb(175, 224, 224); color: rgb(0, 153, 0);">
+                                    Fluxo
+                                    de caixa operacional. Trabalha o fluxo de caixa a partir do sistema
+                                    financeiro. Com flexibilidades para agrupamentos de contas afins numa
+                                    çnica
+                                    conta de fluxo. Visão em tela, gráficos e relatórios. Aceita cençrio de
+                                    investimento com taxa de projeção e desconto com çalculo do VPL<br>
+                              </td>
+                        </tr>
+
+                        <tr>
+                              <td style="vertical-align: top;"><a href="Explicativo_ItensInventariados.html"><img
+                                                style="border: 0px solid ; width: 261px; height: 69px;"
+                                                alt="Inventçrio e Ressuprimento" src="btninvressup.png"></a><br>
+                              </td>
+                              <td style="vertical-align: top; color: rgb(0, 117, 0);"><span
+                                          style="font-family: Helvetica,Arial,sans-serif;">Inventçrio e
+                                          Ressuprimento. Manual sobre&nbsp; o funcionamento da função de
+                                          controle de itens inventariados para orientação aos vendedores e demais
+                                          atuantes no sistema de como proceder&nbsp; às mensagens orientativas
+                                          quanto a itens
+                                          em estoque mínimo e itens inventariados na elaboração da venda.</span>
+                                    <div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+                                    </div>
+
+                                    <p class="MsoNormal"
+                                          style="margin-right: -32.9pt; text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </p>
+
+                              </td>
+                        </tr>
+                        <tr>
+                              <td style="vertical-align: top;"><img style="width: 263px; height: 51px;"
+                                          src="downloadicon.png" alt=""></td>
+                              <td style="vertical-align: top;"><a
+                                          href="https://drive.google.com/file/d/1ICvmEiaaUdUkSsSCq4oT4E5HJ74RwU-A/view?usp=sharing">
+                                    </a><a
+                                          href="https://drive.google.com/file/d/1ICvmEiaaUdUkSsSCq4oT4E5HJ74RwU-A/view?usp=sharing">
+                                    </a><a
+                                          href="https://drive.google.com/file/d/1ICvmEiaaUdUkSsSCq4oT4E5HJ74RwU-A/view?usp=sharing">Inforvia
+                                          Vendas2023</a>&nbsp; NFe4.X + NFCe4.x<br>
+                                    +Lei 12741/12 <span
+                                          style="color: rgb(0, 0, 0); font-family: Arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: justify; text-indent: 38px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;">Valor
+                                          aproximado correspondente à totalidade dos tributos<br>
+                                          +NT2015/002 Alteração CFOP 5403 para CFOP5405<br>
+                                    </span><span
+                                          style="color: rgb(0, 0, 0); font-family: Arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: justify; text-indent: 38px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;">+NT2015/002
+                                          QrCode no XML NFCe<br>
+                                    </span><br>
+                                    <br>
+                                    <a
+                                          href="https://drive.google.com/file/d/1ICvmEiaaUdUkSsSCq4oT4E5HJ74RwU-A/view?usp=sharing">Inforvia
+                                          Vendas2023</a>&nbsp; NFe4.x + NFCe4.x Lei 12741/12 <span
+                                          style="color: rgb(0, 0, 0); font-family: Arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: justify; text-indent: 38px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline ! important; float: none;">valor
+                                          aproximado correspondente à totalidade dos tributos<br>
+                                    </span><br>
+                                    <a
+                                          href="https://drive.google.com/file/d/1ICvmEiaaUdUkSsSCq4oT4E5HJ74RwU-A/view?usp=sharing">Inforvia
+                                          Sges</a>&nbsp;&nbsp;&nbsp;
+                                    &nbsp; <br>
+                                    <br>
+                                    <a rel="tag"
+                                          href="https://drive.google.com/file/d/1ICvmEiaaUdUkSsSCq4oT4E5HJ74RwU-A/view?usp=sharing">&nbsp;Inforvia
+                                          NFeCaixa</a>. Versão atual com carta de correção, com otimização da
+                                    emissão da Nfe<br>
+                                    <br>
+                                    <a
+                                          href="https://anydesk.com/pt/downloads/thank-you?dv=win_exe">Anydesk</a>.&nbsp;&nbsp;&nbsp;
+                                    Suporte remoto. Download e copie na área de trabalho. Acesse e gere uma
+                                    chave em mostrar meu PC<br>
+                                    <br>
+                                    <a href="https://ibge.gov.br/explica/codigos-dos-municipios.php">IBGE
+                                          Municípios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>Códigos oficiais dos
+                                    Munípios brasileiros para uso na NF-e<br>
+                                    href="https://ibge.gov.br/explica/codigos-dos-municipios.php">Unidanfe</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Com NFCe<br>
+                                    <br>
+                                    <br>
+                                    &nbsp;inforviaVendas, a senha ao suporte,
+                                    selecione a aba NF-e e&nbsp; click em criar Munícipios. Aguarde a
+                                    inclusão dos municípios no banco de dados<br>
+                                    <br>
+                                    <br>
+                                    <a
+                                          href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=qmxgJXfbUhs=">
+                                          <img style="border: 0px solid ; width: 184px; height: 53px;" alt=""
+                                                src="nfe_MINIinforvia.JPG" class="style2">Manual NF-e em
+                                          http://www.nfe.fazenda.gov.br/portal/principal.aspx </a><br>
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+            <br>
+            <p>Informatização&nbsp;
+                  comercial, vendas com emissão de NFe e NFCe, transportadoras com CTe,
+                  construtoras,&nbsp; instaladoras, locação de equipamentos, ordem de
+                  serviços(contrôle de O.S) para assistências Tecnicas, Climatização
+                  SPLIT, Motores, Compressores etc<br>
+            </p>
+            <p style="margin: 0.75pt 0cm;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="INFORVIAPropostaComercial_2010.htm"
+                        target="_blank">Proposta
+                        comercial </a><span style="text-decoration: underline;"><br>
+                  </span></p>
+            <p style="margin: 0.75pt 0cm;"><span style="text-decoration: underline;"></span><br>
+                  <img style="width: 189px; height: 35px;" alt="(92) 98263-5637" src="whatsapp.jpg">&nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                  &nbsp;&nbsp; <img alt="" src="vanderlantvhotmailcom.JPG" height="23" width="175">&nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp;&nbsp; <a href="http://www.facebook.com/InforviaSistemas"
+                        target="_blank">facebook/inforviasistemas</a><span
+                        style="text-decoration: underline;"></span><br>
+            </p>
+            <p style="margin: 0.75pt 0cm; text-align: left;">
+                  Telefone WhatsApp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  :&nbsp; (92) 98263-5637&nbsp;&nbsp;&nbsp;&nbsp; <br>
+            </p>
+            <p style="margin: 0.75pt 0cm;">Endereão&nbsp;
+                  : Av. Brasil, 2525C - Compensa&nbsp;&nbsp; Cep 69.036-110 &nbsp; &nbsp;
+                  Manaus.Amazonas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <br>
+            </p>
+      </div>
+
+</body>
+
+</html>
