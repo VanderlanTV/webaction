@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 12 (filtered)"><title>Inventário rotativo e Ressuprimento pela demanda de vendas</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Bold PS";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	font-style:italic;
+	text-decoration:underline;}
+h2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:normal;}
+h3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	text-decoration:underline;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+h5
+	{margin-top:0cm;
+	margin-right:-32.9pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	letter-spacing:-.15pt;
+	text-decoration:underline;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	text-decoration:underline;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:0cm;
+	margin-right:-32.9pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Bold PS","serif";
+	letter-spacing:-.15pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Cabeçalho Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Rodapé Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:-32.9pt;
+	margin-bottom:0cm;
+	margin-left:21.3pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	letter-spacing:-.15pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Texto de balão Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+span.CabealhoChar
+	{mso-style-name:"Cabeçalho Char";
+	mso-style-link:Cabeçalho;}
+span.RodapChar
+	{mso-style-name:"Rodapé Char";
+	mso-style-link:Rodapé;}
+span.TextodebaloChar
+	{mso-style-name:"Texto de balão Char";
+	mso-style-link:"Texto de balão";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page Section1
+	{size:612.0pt 792.0pt;
+	margin:42.55pt 72.0pt 42.55pt 72.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style></head><body link="blue" vlink="purple">
+
+<div class="Section1">
+
+<p class="MsoNormal" style="text-align: justify;"><b><font face="Bold PS" size="2"><span style="font-size: 11pt; font-family: &quot;Bold PS&quot;,&quot;serif&quot;; letter-spacing: -0.15pt; font-weight: bold;">&nbsp;</span></font></b></p>
+
+<p class="MsoNormal" style="text-align: justify;"><b><font face="Bold PS" size="2"><span style="font-size: 11pt; font-family: &quot;Bold PS&quot;,&quot;serif&quot;; letter-spacing: -0.15pt; font-weight: bold;">Manual Operacional 20110502</span></font></b></p>
+
+<p class="MsoNormal" style="text-align: justify;"><b><font face="Bold PS" size="2"><span style="font-size: 11pt; font-family: &quot;Bold PS&quot;,&quot;serif&quot;; letter-spacing: -0.15pt; font-weight: bold;">Gerenciamento de Inventário, ressuprimento integrado à Gestão
+de vendas </span></font></b></p>
+
+<p class="MsoNormal" style="text-align: justify;"><font face="Times New Roman" size="2"><span style="font-size: 11pt;">&nbsp;</span></font></p>
+
+<font face="Bold PS" size="2"><span style="font-size: 11pt; font-family: &quot;Bold PS&quot;,&quot;serif&quot;; letter-spacing: -0.15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font>&nbsp; Introdução
+<div style="font-family: monospace;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: Helvetica,Arial,sans-serif;">Explica&nbsp; o funcionamento da função de
+controle de itens inventariados para orientação aos vendedores e demais
+atuantes no sistema de como proceder&nbsp; às mensagens orientativas quanto a itens
+em estoque mínimo e itens inventariados na elaboração da venda.</span>
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Em estoques há o itens críticos, itens com
+quantidades muito baixas em relação a quantidade requerida para a venda. Então
+é melhor confirmar a quantidade em estoque, que passar pelo constrangimento com
+o cliente em vender sem ter para entrega imediata. Para prevenir ou minimizar
+estas situações de criticidade, pode-se implantar um sistema de inventário e
+ressuprimento&nbsp;&nbsp; rotativo disponível no sistema inforvia. Consiste basicamente
+de uma integração entre as partes vendedores, sistema e compradores no suprimento
+das mercadorias.
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+Data
+Base do inventário &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;A sistema considera itens inventarias antes da
+data base como não inventariados. Ou seja são itens que as informações precisam
+ser confirmadas fisicamente quanto a quantidade em estoque. Tomemos como base a
+data 02/05/2011
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+Data
+base do
+inventário&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+: 02/05/2011
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A data base
+do inventário é importante, porque o controle dos itens inventariados
+orienta-se por ela, ou seja, do total de itens catalogados(cadastrados)&nbsp;
+estarão sob controle confiável os itens inventariados após a data base. Com a
+contagem diária, novos itens são adicionados na lista de itens confiáveis. 
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+Comportamento de resposta
+do sistema&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema
+pode ser configurado para bloquear o orçamento com quantidade acima da
+existente em estoque, ou configurado para dar mensagens no momento da venda, de
+maneira que o vendedor tomará conhecimento que aquele é um item crítico, ou
+bloquear o item para venda, podendo ser liberado por senha por um gerente. Entretanto,
+bloquear a venda com liberação por senha gera uma demora no atendimento. Assim
+considera-se melhor uma conscientização junto aos vendedores e atuantes no
+sistema, de maneira a explicar ao cliente que será necessário uma confirmação
+com relação ao item tal. O sistema pode gerar imediatamente uma requisição
+eletrônica(ou em papel)de contagem do estoque.
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para
+implantação do programa de itens inventariados, esta é a principal providencia
+juntos aos vendedores, a conscientização sobre o controle do estoque. &nbsp;&nbsp;
+<div style="text-align: justify; font-family: Helvetica,Arial,sans-serif;">
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As mensagens
+geradas na digitação dos itens aos vendedores, cria um conhecimento tácito
+sobre a situação dos itens, e somado a isto, o sistema assinala estes itens em
+situação especial, para&nbsp; supervisionamento posterior, com impressão de itens em
+situação crítica e cálculo de ressuprimento para os &nbsp;asssinalados. Veremos a
+frente como o sistema trabalha a parte de sugestão de compras para itens
+críticos.<br>
+<font face="Times New Roman" size="2"><span style="font-size: 11pt; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;;"></span></font><font face="Times New Roman" size="2"><span style="font-size: 11pt;"></span></font>
+
+<br>
+<font face="Times New Roman" size="2"><span style="font-size: 11pt;">&nbsp;</span></font>
+
+<br>
+<font face="Times New Roman" size="2"><span style="font-size: 11pt;">&nbsp;Tela:Mensagem vista pelo
+vendedor com relação a itens críticos</span></font>
+
+<p class="MsoNormal" style="text-align: justify;"><font face="Times New Roman" size="2"><span style="font-size: 11pt;"><img id="Imagem 12" src="Explicativo_ItensInventariados_arquivos/image001.jpg" height="325" width="624"></span></font></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Vendedor seleciona o
+Item, informa a quantidade para venda, o sistema consulta o estoque e &nbsp;avisa
+sobre a venda com quantidade maior a existente</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Com senha ou senha o
+sistema avisa sempre. Sem senha inclui automático na venda, com senha inclui se
+liberado pela senha. Visão de item liberado na venda</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><font face="Times New Roman" size="2"><span style="font-size: 11pt;"><img id="Imagem 13" src="Explicativo_ItensInventariados_arquivos/image002.jpg" height="157" width="590"></span></font></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Este item incluído na
+venda, foi incluído lista de itens críticos para conhecimento da pessoa do
+estoque. Assim Ele poderá monitorar os itens com estoque crítico</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>MARGEM DE SEGURANÇA</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>A margem de segurança é calculada
+&nbsp;em porcentual, pela equação, quantidade informada para a venda do item dividido
+pela quantidade em estoque. Assim se a quantidade vendida ultrapassar a margem
+de segurança, faz-se necessário a consulta física para confirmar a venda.</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Com o avanço do sistema
+de controle e a melhora da acurácia do estoque pelo programa de inventário, a
+margem pode ir-se subindo até chegar a um limite próximo de cem. Pode-se
+iniciar com uma margem de 85%&nbsp; de acurácia. Assim, quantidades vendidas que
+representam o porcentual acima de 85% &nbsp;precisa de consulta física, quantidades
+que não atingem o porcentual da margem podem ser vendidas direto.</big> </p>
+
+<br style="page-break-before: always;" clear="all">
+
+
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Exemplos de margem de
+segurança; </big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Item A , quantidade em
+estoque 1000</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Venda : 700&nbsp;&nbsp; = (700/1000)
+* 100 = 70% ,&nbsp; 70% está aquém da margem de segurança, pode vender direto</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Venda : 850&nbsp;&nbsp; =
+(850/1000) * 100 = 85% ,&nbsp; 85% é igual a&nbsp; margem de segurança, pode vender
+direto</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Venda : 855&nbsp;&nbsp; =
+(855/1000) * 100 &nbsp;= 85.5% ,&nbsp; 85,5% está além da margem de segurança, precisa de
+consulta para vender</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Item B , quantidade em
+estoque 10</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Venda : 9&nbsp;&nbsp; = &nbsp;(9/10) *
+100 = 90% , 90% está além da margem de segurança, precisa de consulta para
+vender</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Item C , quantidade em
+estoque 1</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Venda : 1&nbsp;&nbsp; = (1/1) * 100
+= 100% ,&nbsp; 100% está além da margem de segurança, precisa de consulta para
+vender</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>Tela : Item vendido menor
+que a quantidade em estoque, entretanto entra na margem de segurança. Estoque&nbsp;&nbsp;
+= 133, vendidos 110. </big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big><img id="Imagem 14" src="Explicativo_ItensInventariados_arquivos/image003.jpg" height="309" width="623"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Relatatórios Gerenciais</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;Itens assinalados são
+incluídos nas listas de verificação de itens críticos</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Relatório
+Critica com itens em Estoque superior ao mínimo, valorizado pelo custo de
+ressuprimento, com itens em estoque&nbsp; menor que o mínimo</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img src="Explicativo_ItensInventariados_arquivos/image004.jpg" height="95" width="624"></big></p>
+
+<big><br style="page-break-before: always;" clear="all">
+</big>
+
+
+
+<p class="MsoNormal"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Relatório Critica com
+itens em Estoque superior ao mínimo, valorizado pelo custo de ressuprimento,
+com itens em estoque&nbsp; maior que o mínimo</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img src="Explicativo_ItensInventariados_arquivos/image005.jpg" height="190" width="624"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Relatório Critica com
+itens com Estoque mínimo menor que o Estoque atual e sugestão de compra para
+90dias, valorizado pelo custo de ressuprimento.</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img src="Explicativo_ItensInventariados_arquivos/image006.jpg" height="144" width="624"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Ficha histórico da
+Movimentação:&nbsp; Mostra a movimentação de entrada de saída, com informações como
+data e hora da movimentação, número do computador, número do documento , Numero
+da Nota Fiscal, preço de custo, preço de venda. Pode ser impresso como visto na
+próxima pagina</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img id="Imagem 7" src="Explicativo_ItensInventariados_arquivos/image007.jpg" height="134" width="624"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img src="Explicativo_ItensInventariados_arquivos/image008.jpg" height="481" width="624"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img id="Imagem 1" src="Explicativo_ItensInventariados_arquivos/image009.jpg" height="238" width="624"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Observa-se que nesta
+amostra o sistema não computou a movimentação de Entrada, isto porque as
+entradas na estão sendo alimentadas, com a implantação a coluna entrada
+mostrará a quantidade de&nbsp; Entrada no período.</big></p><big>&nbsp;
+
+</big><p class="MsoNormal" style="text-align: justify;"><big>Parte II. Como calcular o
+estoque mínimo dos Itens pela expectativa de Vendas e período de ressuprimento</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>No sistema inforvia, foi
+criado uma operação para calcular o estoque mínimo baseado no movimento da
+venda. Assim, itens com baixa movimentação podem estar com um estoque proporcional
+a movimentação. Já itens com alta movimentação, precisam de um estoque proporcional
+a movimentação com margem de segurança. Considerando que o sistema armazena as
+movimentações das vendas&nbsp; com quantidade, data , hora etc. A partir destes
+dados podemos calcular o estoque mínimo para os itens, com precisão individual
+de cada item movimentado no período desejado.&nbsp; Para este primeiro cálculo foi
+criado uma função calcular estoque mínimo para&nbsp; o estoque total. </big></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: 35.4pt;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Tela: Ressuprimento de
+itens para um período</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big><img style="width: 1140px; height: 366px;" id="Imagem 4" src="Explicativo_ItensInventariados_arquivos/image010.jpg"></big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Após conclusão do cálculo
+geral para o estoque mínimo, você pode fazer o refinamento específico por
+marca, segmento, por parte da descrição e até para um item individual. </big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Para carcular o estoque
+mínimo para uma marca, segue:</big></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align: justify;"><big>No cadastro de produtos,
+marque a opção estoque mínimo e inventário, informe/selecione a &nbsp;marca e click
+em Calcular ressuprimento, estoque mínimo. Aguarde o final do processamento
+para a marca.</big></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Para carcular o estoque
+mínimo para um segmento, segue:</big></p>
+
+<p class="MsoListParagraphCxSpFirst" style="text-align: justify;"><big>Marque a opção Estoque
+mínimo e inventário, informe/selecione o&nbsp; segmento e click em Calcular ressuprimento,
+estoque mínimo. Aguarde o final do processamento para o estoque mínimo.</big></p>
+
+<p class="MsoListParagraphCxSpLast" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>Para carcular o estoque
+mínimo para um Item, segue:</big></p>
+
+<p class="MsoListParagraph" style="text-align: justify; text-indent: -18pt;"><big>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Marque
+a opção Estoque mínimo e inventário, informe/selecione o&nbsp; produto desejado &nbsp;e
+click em Calcular ressuprimento, estoque mínimo. Aguarde o final do
+processamento para o produto selecionado.</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+<p class="MsoNormal" style="margin-left: 36pt; text-align: justify;"><big>Observação: Você pode
+modificar o estoque mínimo calculado para refinar o resultado com sua
+experiência, sazonalidade, expectativa de demanda futura etc.&nbsp; Para fazer, Marque a opção Estoque mínimo e
+inventário, faça uma selecione&nbsp; em lista com parte da descrição e tecle
+&lt;Enter&gt;</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;</big></p>
+
+
+
+<p class="MsoNormal" style="text-align: justify;"><big>&nbsp;<br>
+
+Conclusão</big></p>
+
+<p class="MsoNormal" style="text-align: justify;"><big>O programa de inventário
+com ressuprimento por sugestão é uma ferramenta para ajudar no gerenciamento do
+estoque. Aliado ao gerenciamento diário pode se tornar uma vantagem competitiva
+a empresa</big></p>
+
+</div>
+
+</body></html>

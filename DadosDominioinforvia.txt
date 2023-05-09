@@ -1,0 +1,24 @@
+Dns Zone check is enabled.
++===================================+
+| New Account Info                  |
++===================================+
+| Domain: inforviasistemas.com.br
+| Ip: 69.4.238.64 (n)
+| HasCgi: y
+| Endereço CPanel: www.inforviasistemas.com.br/cpanel
+| Endereço FTP: ftp.inforviasistemas.com.br
+| UserName: inforvia
+| PassWord: infor1via2
+| CpanelMod: x3
+| HomeRoot: /home
+| Quota: 100 Meg
+| NameServer1: ns1.linkercomunicacao.com.br
+| NameServer2: ns2.linkercomunicacao.com.br
+| NameServer3: 
+| NameServer4: 
+| Contact Email: leandro@linkercomunicacao.com.br
+| Package: linkerco_BASICO
+| Feature List: default
+| Language: pt
++===================================+
+...Done
